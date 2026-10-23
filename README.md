@@ -1,6 +1,6 @@
-# NBC API Tanzania — Premier League (Ligi Kuu Bara) Football API
+# Tanzania Premier League API — Ligi Kuu Bara football data
 
-The most complete [Tanzania football API](https://rapidapi.com/xeirto/api/global-football-api1) for the **NBC Premier League** — Tanzania's top-flight football data as clean, fast REST JSON.
+The most complete [Tanzania football API](https://rapidapi.com/xeirto/api/global-football-api1) — **Ligi Kuu Bara** (the Tanzania Mainland Premier League) as clean, fast REST JSON.
 
 Live scores, fixtures, results, league tables, club directory, and goal timelines for `tza.1` (NBC Premier League / Ligi Kuu Bara) and `tza.2` (NBC Championship League), plus 58 other competitions worldwide — Premier League, LaLiga, Serie A, MLS, Brasileirão, Saudi Pro League and more, all through one API.
 
@@ -87,7 +87,7 @@ Familiar examples: `eng.1` (Premier League), `usa.1` (MLS), `bra.1` (Brasileirã
 ```js
 const host = 'global-football-api1.p.rapidapi.com';
 
-async function nbcPremierLeagueTable() {
+async function tanzaniaPremierLeagueTable() {
   const res = await fetch(
     `https://${host}/get/soccer/tza.1/standings?season=2026`,
     {
@@ -103,7 +103,8 @@ async function nbcPremierLeagueTable() {
   }
 }
 
-nbcPremierLeagueTable(); // 1 Simba SC · 2 Young Africans · 3 Azam FC …
+tanzaniaPremierLeagueTable(); // 1 Simba SC · 2 Young Africans · 3 Azam FC …
+
 ```
 
 **Python:**
