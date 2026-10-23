@@ -13,7 +13,7 @@ All endpoints return `application/json`. Unknown slugs/ids return `404`, malform
 | `GET /get/soccer/leagues` | `kind` = `club` \| `international` \| `all` (default `club`) | One entry per competition: slug, name, country, season, coverage counts |
 | `GET /get/soccer/meta` | — | Total coverage (competitions, matches, clubs, timeline events) and last successful sync time |
 | `GET /get/soccer/{league}/scoreboard` | `dates` = `YYYYMMDD` (required, single date) | Matches kicking off that date with scores and status |
-| `GET /get/soccer/{league}/fixtures` | optional `season`, `status` = `pre` \| `in` \| `post`, `from`/`to` = `YYYYMMDD`, `limit`, `pageIndex` | Paged season schedule + results; `count` and `pageCount` in the wrapper |
+| `GET /get/soccer/{league}/fixtures` | optional `season`, `status` = `all` \| `scheduled` \| `live` \| `finished`, `from`/`to` = `YYYYMMDD`, `limit`, `page` | Paged season schedule + results; `count` and `pageCount` in the wrapper |
 | `GET /get/soccer/{league}/standings` | optional `season` (default current) | Overall table: rank, team, games, W-D-L, GF-GA, GD, points per entry |
 | `GET /get/soccer/{league}/clubs` | optional `page` | Club directory: display names, abbreviations, crests, colors |
 | `GET /get/soccer/{league}/clubs/{clubId}` | — | One club with venue/address details |

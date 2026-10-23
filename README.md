@@ -115,7 +115,7 @@ import os, requests
 host = "global-football-api1.p.rapidapi.com"
 
 r = requests.get(
-    f"https://{host}/get/soccer/tza.1/fixtures?status=pre&limit=5",
+    f"https://{host}/get/soccer/tza.1/fixtures?status=scheduled&limit=5",
     headers={
         "X-RapidAPI-Key": os.environ["RAPIDAPI_KEY"],  # free key: rapidapi.com
         "X-RapidAPI-Host": host,

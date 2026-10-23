@@ -28,7 +28,7 @@ def main() -> None:
     # => ['tza.1 — NBC Premier League', 'tza.2 — NBC Championship League']
 
     # 2. Upcoming fixtures
-    fixtures = get("/get/soccer/tza.1/fixtures?status=pre&limit=5")
+    fixtures = get("/get/soccer/tza.1/fixtures?status=scheduled&limit=5")
     for event in fixtures["events"]:
         print(event["date"], event["name"])
 
